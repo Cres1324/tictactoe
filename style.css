@@ -1,0 +1,82 @@
+html{
+    background-color: azure;
+    height: 100%;
+    text-align: center;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.name{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+.board{
+    border-radius: 16px;
+    padding: 10px;
+    background-color: rgb(41, 95, 143);
+    display: grid;
+    margin-top: 30px;
+    width: fit-content;
+    grid-template-columns: 120px 120px 120px;
+    grid-template-rows:  120px 120px 120px;
+    gap: 10px
+}
+.control{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    
+}
+.gamePad{
+    font-family:monospace;
+    user-select: none;
+    font-size: 100px;
+    border-radius: 16px;
+    background-color: rgb(172, 133, 86);
+    height:120px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+
+}
+.turn{
+display: flex;
+justify-content: center;
+}
+.player{
+    padding: 20px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.gamePad:active{
+    border: 2px  solid white;
+    background-color: rgb(137, 106, 69);
+}
+
+ input[type='radio'][disabled]{
+    width: 15px;
+    height: 15px;
+    border: 1px solid black;
+    background-color: rgb(218, 243, 243);
+    color: -internal-light-dark(rgb(38, 121, 17), rgb(115, 207, 113));
+    -webkit-appearance: none;
+    border-radius: 20px;
+}
+input[type='text']{
+    margin-left: -20px;
+}
+input[type='radio']:checked{
+    width: 16px;
+    height: 16px;
+    border: 1px solid black;
+    padding: 2px;
+    background-color: green;
+ 
+    -webkit-appearance: none;
+    border-radius: 20px;
+}
